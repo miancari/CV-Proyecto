@@ -4,7 +4,7 @@
 }
 
 body {
-    background: rgba(138, 66, 66, 0.527);
+    background: rgba(195, 204, 202, 0.219);
   }
 
 .header-contenedor {
@@ -20,44 +20,44 @@ body {
     justify-content: end;
     grid-column: 1/2;
     grid-row: 1/ span 2;
-    background: rgb(166, 166, 221);
+    background: rgb(16,101,126);
     margin: 0%;
 }
 
 .uno img {
-    height: 300px;
-    width: 300px;
+    height: 301px;
+    width: 301px;
     border-radius: 50%;
 }
 
 .dos {
     grid-column: 2/2;
     grid-row: 1/1;
-    background: rgba(138, 165, 241, 0.096);
-    border-radius: 12px;
+    background-color:rgb(180, 183, 185);
+    margin: 0%;
 }
 
 .dos h1 {
-    margin: 20px 20px 0px 20px;
     font-family: fantasy;
-    font-size: 50px;
+    font-size: 51px;
     color: rgb(235, 235, 240);
     -webkit-text-stroke: 3px black;
 }
 
 .dos h4 {
-    color: rgb(66, 66, 240);
+    color: rgb(25, 25, 214);
 }
 
 .tres {
     display: flex;
     justify-content: space-evenly;
-    background: rgba(245, 222, 179, 0.37);
-    border-radius: 12px;
+    background: rgb(180, 183, 185);
+    
+    margin: 0%;
 }
 
 .tres img {
-    height: 60px;
+    height: 55px;
     width: 60px;
 }
 
@@ -66,7 +66,7 @@ body {
     justify-content: center;
     grid-column: 1/1;
     grid-row: 3/3;
-    background: rgb(166, 166, 221);
+    background: rgb(180, 183, 185);
     margin: 0%;
 }
 
@@ -81,7 +81,7 @@ li, h2 {
 .seis {
     grid-column: 1/1;
     grid-row: 4/4;
-    background: rgb(166, 166, 221);
+    background: rgb(180, 183, 185);
     margin: 0%;
     display: grid;
     justify-content: center;
@@ -90,7 +90,7 @@ li, h2 {
 .siete {
     grid-column: 1/1;
     grid-row: 5/5;
-    background: rgb(166, 166, 221);
+    background: rgb(180, 183, 185);
     margin: 0%;
     display: grid;
     justify-content: center;
@@ -114,4 +114,97 @@ li, h2 {
     grid-row: 6/6;
     background: rgba(216, 243, 163, 0.322);
     margin: 0%;
+}
+
+@media screen and (max-width: 1440px) {
+    .uno {
+        display: grid;
+        justify-content: center;
+    }
+        .dos {
+        height: 100%;
+    }
+    .tres {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .uno {
+        display: grid;
+        justify-content: center;
+        align-content:center;
+        height: 100%;
+    }
+    .uno img {
+        height: 200px;
+        width: 200px;
+    }
+    .tres img {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .diez {
+        grid-column: 1/ span 2;
+        grid-row: 10/10;
+    }
+    .nueve {
+        grid-column: 1/ span 2;
+        grid-row: 7/7;
+    }
+    .ocho {
+        grid-column: 1/ span 2;
+        grid-row: 6/6;
+        background: rgb(180, 183, 185);
+    }
+    .siete {
+        grid-column: 1/ span 2;
+        grid-row: 9/9;
+    }
+    .seis {
+        grid-column: 1/ span 2;
+        grid-row: 8/8;
+    }
+    .cinco {
+        grid-column: 1/ span 2;
+        grid-row: 5/5;
+    }
+    .cuatro {
+        display: grid;
+        justify-content: center;
+        grid-column: 1/ span 2;
+        grid-row: 4/4;
+    }
+    .tres img {
+        margin:0%;
+        height: 35px;
+        width: 35px;
+    }
+    .tres {
+        grid-column: 1/ span 2;
+        grid-row: 3/3;
+    }
+    .dos h4 {
+        font-size: 20px;
+    }
+    .dos h1 {
+        font-family: fantasy;
+        font-size: 40px;
+    }
+    .dos {
+        grid-column: 1/ span 2;
+        grid-row: 2/2;
+    }
+    .uno img {
+        height: 250px;
+        width: 250px
+    }
+    .uno {
+        display: grid;
+        justify-content: center;
+        grid-column: 1/span 2;
+        grid-row: 1/ 1;
+    }
 }
