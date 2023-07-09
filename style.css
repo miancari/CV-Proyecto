@@ -20,7 +20,7 @@ body {
     justify-content: end;
     grid-column: 1/2;
     grid-row: 1/ span 2;
-    background: blue;
+    background: rgb(166, 166, 221);
     margin: 0%;
 }
 
@@ -70,10 +70,48 @@ body {
     margin: 0%;
 }
 
-.cuatro  li, h3 {
-    margin: 0%;
+li, h2 {
+    margin: 3%;
 }
 .cinco {
     grid-column: 2/2;
     grid-row: 3/3;
+}
+
+.seis {
+    grid-column: 1/1;
+    grid-row: 4/4;
+    background: rgb(166, 166, 221);
+    margin: 0%;
+    display: grid;
+    justify-content: center;
+}
+
+.siete {
+    grid-column: 1/1;
+    grid-row: 5/5;
+    background: rgb(166, 166, 221);
+    margin: 0%;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.ocho {
+    grid-column: 2/2;
+    grid-row: 4/4;
+}
+
+.nueve {
+    grid-column: 2/2;
+    grid-row: 5/5;
+}
+
+.diez {
+    grid-column: 1/ span 2;
+    grid-row: 6/6;
+    background: rgba(216, 243, 163, 0.322);
+    margin: 0%;
 }
